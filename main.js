@@ -44,28 +44,19 @@ function calculaTempo(tempoObjetivo) {
 function atualizaCrometro(){
     for (let i=0;i<contadores.length;i++){ 
         document.getElementById("dias"+i).textContent =
-calculaTempo(tempos[i])[0];
+calculaTempos(tempos[i])[0];
         document.getElementById("horas"+i).textContent =
-calcula
+calculaTempos(tempos[i])[1];
+        document.getElementById("min"+i).textContent =
+calculaTempos(tempos[i])[2];
+        document.getElementById("seg"+i).textContent =
+calculeTempos(tempo[i])[3];
+    }
+}
 
-document.getElementById("seg"+i) textContent=
+function comecaCronometro(){
+    atualizaCronometro();
+    setInterval(atualizaCronometro,1000);
+}
 
-function altualicalCramometro
-
-cacule document.getElementById("min"+i) textContent=
-
-Tempio tempos
-
-calcula Tempotempos (2)
-
-calcula Tempo(tempos (3)
-
-function comecaCronometro()(
-
-atualiza Cronometro()
-
-comeca Cronometro()
-
-setimervall atualiza Cronometro, 1000);
-
-cacula Tempo/tempos
+comecaCronometro();
